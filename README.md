@@ -10,10 +10,10 @@ Explore US Bikeshare Data
 This project uses Python to explore bike share data from three major US cities. The interactive script provides statistics to answer questions about bike usage, and provides results in the terminal.
 
 ### Files used
-bikeshare_2.py : Interactive Script
-chicago.csv : Chicago Bikeshare Data
-new_york_city.csv : New York City Bikeshare Data
-washington.csv : Washtington D.C. Bikeshare Data
+- bikeshare_2.py : Interactive Script
+- chicago.csv : Chicago Bikeshare Data
+- new_york_city.csv : New York City Bikeshare Data
+- washington.csv : Washtington D.C. Bikeshare Data
 
 ### Credits
 https://github.com/udacity/pdsnd_github
