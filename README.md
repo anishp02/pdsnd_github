@@ -13,8 +13,8 @@ This project uses Python to explore bike share data from three major US cities. 
 - bikeshare_2.py : Interactive Script
 - chicago.csv : Chicago Bikeshare Data
 - new_york_city.csv : New York City Bikeshare Data
-- washington.csv : Washtington D.C. Bikeshare Data
+- washington.csv : Washington D.C. Bikeshare Data
 
 ### Credits
-https://github.com/udacity/pdsnd_github
-learn.udacity.com
+- https://github.com/udacity/pdsnd_github
+- https://learn.udacity.com
