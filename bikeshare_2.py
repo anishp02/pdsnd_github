@@ -204,8 +204,13 @@ def main():
         user_stats(df)
         display_raw(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        while True:
+            restart = input('\nWould you like to restart? (Yes or No): ').lower()
+            if restart in ['yes', 'no']:
+                break
+            print('\nInvalid Input: Please enter "yes" or "no".: ')
+
+        if restart == 'no':
             break
 
 
