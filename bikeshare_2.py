@@ -179,7 +179,7 @@ def display_raw(df):
     for another 5 lines of raw data. """
     
     i = 0
-    raw = input("\nWould you like to see raw data? ").lower()
+    raw = input("\nWould you like to see raw data? (Yes or No): ").lower()
     pd.set_option('display.max_columns', 200)
 
     while True:            
