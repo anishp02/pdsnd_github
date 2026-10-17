@@ -173,6 +173,26 @@ def user_stats(df):
     print('-'*40)
 
 
+def display_raw(df):
+    """ Prompts the user to see if they would like to see raw data. If yes, 
+    the function will provide 5 lines of raw data and then reprompt the user 
+    for another 5 lines of raw data. """
+    
+    i = 0
+    raw = input("\nWould you like to see raw data? (Yes or No): ").lower()
+    pd.set_option('display.max_columns', 200)
+
+    while True:            
+        if raw == 'no':
+            break
+        elif raw == 'yes':
+            print(df[i:i + 5])
+            raw = input("Would you like to see the next 5 rows? ").lower()
+            i += 5
+        else:
+            raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -182,9 +202,15 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        display_raw(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        while True:
+            restart = input('\nWould you like to restart? (Yes or No): ').lower()
+            if restart in ['yes', 'no']:
+                break
+            print('\nInvalid Input: Please enter "yes" or "no".: ')
+
+        if restart == 'no':
             break
 
 
